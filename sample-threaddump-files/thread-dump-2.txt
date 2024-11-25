@@ -1,0 +1,14 @@
+2018-06-19 16:44:44
+Full thread dump Java HotSpot(TM) 64-Bit Server VM (10.0.1+10 mixed mode):
+
+Threads class SMR info:
+_java_thread_list=0x00000250e5488a00, length=13, elements={
+0x00000250e4979000, 0x00000250e4982800, 0x00000250e52f2800, 0x00000250e4992800,
+0x00000250e4995800, 0x00000250e49a5800, 0x00000250e49ae800, 0x00000250e5324000,
+0x00000250e54cd800, 0x00000250e54cf000, 0x00000250e54d1800, 0x00000250e54d2000,
+0x00000250e54d0800
+
+"Reference Handler" #2 daemon prio=10 os_prio=2 tid=0x00000250e4979000 nid=0x3c28 waiting on condition [0x000000b82a9ff000]
+   java.lang.Thread.State: RUNNABLE
+
+Found 1 deadlock.

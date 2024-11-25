@@ -1,0 +1,124 @@
+Full thread dump Java HotSpot(TM) Client VM (1.5.0_10-b03 mixed mode):
+
+"Thread-7" prio=4 tid=0x0b482220 nid=0x1570 in Object.wait() [0x0bbcf000..0x0bbcfae8]
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x03017960> (a concurrency.diners.Fork)
+	at java.lang.Object.wait(Object.java:474)
+	at concurrency.diners.Fork.get(Fork.java:22)
+	- locked <0x03017960> (a concurrency.diners.Fork)
+	at concurrency.diners.Philosopher.run(Philosopher.java:29)
+
+"Thread-6" prio=4 tid=0x0b481808 nid=0xa84 in Object.wait() [0x0bb8f000..0x0bb8fb68]
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x030707e0> (a concurrency.diners.Fork)
+	at java.lang.Object.wait(Object.java:474)
+	at concurrency.diners.Fork.get(Fork.java:22)
+	- locked <0x030707e0> (a concurrency.diners.Fork)
+	at concurrency.diners.Philosopher.run(Philosopher.java:29)
+
+"Thread-5" prio=4 tid=0x0b47e310 nid=0x167c in Object.wait() [0x0bb4f000..0x0bb4fbe8]
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x03070850> (a concurrency.diners.Fork)
+	at java.lang.Object.wait(Object.java:474)
+	at concurrency.diners.Fork.get(Fork.java:22)
+	- locked <0x03070850> (a concurrency.diners.Fork)
+	at concurrency.diners.Philosopher.run(Philosopher.java:29)
+
+"Thread-4" prio=4 tid=0x0b47d808 nid=0x1730 in Object.wait() [0x0bb0f000..0x0bb0fc68]
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x030708c0> (a concurrency.diners.Fork)
+	at java.lang.Object.wait(Object.java:474)
+	at concurrency.diners.Fork.get(Fork.java:22)
+	- locked <0x030708c0> (a concurrency.diners.Fork)
+	at concurrency.diners.Philosopher.run(Philosopher.java:29)
+
+"Thread-3" prio=4 tid=0x0b480cd8 nid=0x11c4 in Object.wait() [0x0bacf000..0x0bacfce8]
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x03017b38> (a concurrency.diners.Fork)
+	at java.lang.Object.wait(Object.java:474)
+	at concurrency.diners.Fork.get(Fork.java:22)
+	- locked <0x03017b38> (a concurrency.diners.Fork)
+	at concurrency.diners.Philosopher.run(Philosopher.java:29)
+
+"AWT-EventQueue-1" prio=4 tid=0x0b46e1d0 nid=0x16c8 in Object.wait() [0x0ba4f000..0x0ba4fa68]
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x02ffa368> (a java.awt.EventQueue)
+	at java.lang.Object.wait(Object.java:474)
+	at java.awt.EventQueue.getNextEvent(EventQueue.java:345)
+	- locked <0x02ffa368> (a java.awt.EventQueue)
+	at java.awt.EventDispatchThread.pumpOneEventForHierarchy(EventDispatchThread.java:189)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:163)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:157)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:149)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:110)
+
+"DestroyJavaVM" prio=6 tid=0x00266dc0 nid=0x1118 waiting on condition [0x00000000..0x0006fae8]
+
+"AWT-EventQueue-0" prio=6 tid=0x0b451f60 nid=0x124c in Object.wait() [0x0b82f000..0x0b82fbe8]
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x0300a858> (a java.awt.EventQueue)
+	at java.lang.Object.wait(Object.java:474)
+	at java.awt.EventQueue.getNextEvent(EventQueue.java:345)
+	- locked <0x0300a858> (a java.awt.EventQueue)
+	at java.awt.EventDispatchThread.pumpOneEventForHierarchy(EventDispatchThread.java:189)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:163)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:157)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:149)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:110)
+
+"thread applet-concurrency/diners/Diners.class" prio=4 tid=0x0b3cab40 nid=0x10a0 in Object.wait() [0x0b7ef000..0x0b7efb68]
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x0300a900> (a sun.applet.AppletViewerPanel)
+	at java.lang.Object.wait(Object.java:474)
+	at sun.applet.AppletPanel.getNextEvent(AppletPanel.java:282)
+	- locked <0x0300a900> (a sun.applet.AppletViewerPanel)
+	at sun.applet.AppletPanel.run(AppletPanel.java:332)
+	at java.lang.Thread.run(Thread.java:595)
+
+"AWT-Windows" daemon prio=6 tid=0x0ac90b38 nid=0x1124 runnable [0x0af0f000..0x0af0fce8]
+	at sun.awt.windows.WToolkit.eventLoop(Native Method)
+	at sun.awt.windows.WToolkit.run(WToolkit.java:269)
+	at java.lang.Thread.run(Thread.java:595)
+
+"AWT-Shutdown" prio=6 tid=0x0ac90780 nid=0x7dc in Object.wait() [0x0aecf000..0x0aecfd68]
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x02fb5830> (a java.lang.Object)
+	at java.lang.Object.wait(Object.java:474)
+	at sun.awt.AWTAutoShutdown.run(AWTAutoShutdown.java:259)
+	- locked <0x02fb5830> (a java.lang.Object)
+	at java.lang.Thread.run(Thread.java:595)
+
+"Java2D Disposer" daemon prio=10 tid=0x0ac82aa8 nid=0x1014 in Object.wait() [0x0ae8f000..0x0ae8f9e8]
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x02fdd7a8> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:116)
+	- locked <0x02fdd7a8> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:132)
+	at sun.java2d.Disposer.run(Disposer.java:107)
+	at java.lang.Thread.run(Thread.java:595)
+
+"Low Memory Detector" daemon prio=6 tid=0x00a94e70 nid=0x1038 runnable [0x00000000..0x00000000]
+
+"CompilerThread0" daemon prio=10 tid=0x00a93a70 nid=0x12c8 waiting on condition [0x00000000..0x0abcf8c8]
+
+"Signal Dispatcher" daemon prio=10 tid=0x00a92e28 nid=0x16bc waiting on condition [0x00000000..0x00000000]
+
+"Finalizer" daemon prio=8 tid=0x00a89cd0 nid=0x1044 in Object.wait() [0x0ab4f000..0x0ab4fc68]
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x02fdd950> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:116)
+	- locked <0x02fdd950> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:132)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:159)
+
+"Reference Handler" daemon prio=10 tid=0x00a88860 nid=0x106c in Object.wait() [0x0ab0f000..0x0ab0fce8]
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x02fdd700> (a java.lang.ref.Reference$Lock)
+	at java.lang.Object.wait(Object.java:474)
+	at java.lang.ref.Reference$ReferenceHandler.run(Reference.java:116)
+	- locked <0x02fdd700> (a java.lang.ref.Reference$Lock)
+
+"VM Thread" prio=10 tid=0x00a85d98 nid=0x1030 runnable 
+
+"VM Periodic Task Thread" prio=10 tid=0x00a960c8 nid=0x14b4 waiting on condition 
+

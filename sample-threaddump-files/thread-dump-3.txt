@@ -1,0 +1,19 @@
+Full thread dump Java HotSpot(TM) 64-Bit Server VM (23.5-b02 mixed mode):
+
+"Attach Listener" daemon prio=5 tid=0x00007fb7d8000000 nid=0x4207 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"Timer-0" daemon prio=5 tid=0x00007fb7d4867000 nid=0x5503 waiting on condition [0x00000001604d9000]
+   java.lang.Thread.State: TIMED_WAITING (sleeping)
+        at java.lang.Thread.sleep(Native Method)
+        at com.journaldev.threads.MyTimerTask.completeTask(MyTimerTask.java:19)
+        at com.journaldev.threads.MyTimerTask.run(MyTimerTask.java:12)
+        at java.util.TimerThread.mainLoop(Timer.java:555)
+
+"GC task thread#5 (ParallelGC)" prio=5 tid=0x00007fb7d5802000 nid=0x3a03 runnable
+"GC task thread#6 (ParallelGC)" prio=5 tid=0x00007fb7d5802800 nid=0x3b03 runnable
+"GC task thread#7 (ParallelGC)" prio=5 tid=0x00007fb7d5803800 nid=0x3c03 runnable
+
+"VM Periodic Task Thread" prio=5 tid=0x00007fb7d481e800 nid=0x5403 waiting on condition
+
+JNI global references: 116
